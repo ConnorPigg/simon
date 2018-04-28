@@ -31,7 +31,8 @@ public class GameActivity extends AppCompatActivity {
     public void read_button_sequence() {
       //this is where put code to show user order of buttons
       for (Integer i : generated_button_order) {
-
+        Toast.makeText(getApplicationContext(), i.toString(),
+            Toast.LENGTH_SHORT);
       }
     }
     public void simon_button_clicked(final View v) {
