@@ -9,21 +9,23 @@
 
     <TextView
         android:id="@+id/ScoreLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="61dp"
+        android:layout_height="29dp"
         android:layout_marginLeft="56dp"
         android:layout_marginTop="8dp"
         android:text="Score"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintRight_toLeftOf="@+id/Score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
 
     <TextView
         android:id="@+id/Score"
-        android:layout_width="wrap_content"
+        android:layout_width="17dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -32,17 +34,18 @@
         android:text="0"
         android:textColor="#000000"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintRight_toLeftOf="@+id/HighScoreLabel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ScoreLabel"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="159dp"
-        android:layout_height="146dp"
+        android:layout_height="147dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -112,20 +115,17 @@
         android:id="@+id/button5"
         android:layout_width="115dp"
         android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/circle"
         android:onClick="start_restart_button_clicked"
         android:text="Start/Stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintCircleRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toEndOf="@+id/ScoreLabel"
+        app:layout_constraintLeft_toLeftOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.581" />
+        app:layout_constraintVertical_bias="0.722" />
 
     <TextView
         android:id="@+id/HighScoreLabel"
@@ -135,12 +135,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="High Score:"
+        android:text="High Score"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintHorizontal_bias="0.805"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.454" />
