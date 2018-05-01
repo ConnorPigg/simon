@@ -1,6 +1,7 @@
 package edu.illinois.cs.cs125.simongame;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,7 @@ public class GameActivity extends AppCompatActivity {
     LinkedList<Integer> user_button_order;
     int user_score = 0;
     Random button_generator;
+    MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,8 @@ public class GameActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), i.toString(),
                     Toast.LENGTH_SHORT).show();
         }
+        mp = MediaPlayer.create(this, R.raw.beep_short);
+        mp.start();
     }
     public void simon_button_clicked(final View v) {
         //this should be called when one of the four buttons are clicked.
@@ -66,6 +70,8 @@ public class GameActivity extends AppCompatActivity {
                 //User messed up. Record score. Stop game (or give them another try).
                 Toast.makeText(getApplicationContext(),
                         "WRONG! Pay attention.", Toast.LENGTH_SHORT).show();
+                mp = MediaPlayer.create(this, R.raw.crash);
+                mp.start();
                 final_score();
                 return;
             }
