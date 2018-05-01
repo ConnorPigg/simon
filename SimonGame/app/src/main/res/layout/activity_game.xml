@@ -50,7 +50,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/quarter_circle_bottom_right"
+        android:background="@drawable/bot_right_pressed"
         android:onClick="simon_button_clicked"
         android:text="1"
         android:textColor="@android:color/darker_gray"
@@ -69,7 +69,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="92dp"
-        android:background="@drawable/quarter_circle_top_right"
+        android:background="@drawable/top_right_pressed"
         android:onClick="simon_button_clicked"
         android:text="0"
         android:textColor="@android:color/darker_gray"
@@ -86,7 +86,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/quart_circle_bottom_left"
+        android:background="@drawable/bot_left_pressed"
         android:onClick="simon_button_clicked"
         android:text="2"
         android:textColor="@android:color/darker_gray"
@@ -103,7 +103,7 @@
         android:layout_height="146dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="92dp"
-        android:background="@drawable/quarter_circle_top_left"
+        android:background="@drawable/top_left_pressed"
         android:onClick="simon_button_clicked"
         android:text="3"
         android:textColor="@android:color/darker_gray"
@@ -115,7 +115,7 @@
         android:id="@+id/button5"
         android:layout_width="115dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="136dp"
+        android:layout_marginEnd="164dp"
         android:layout_marginTop="56dp"
         android:background="@drawable/circle"
         android:onClick="start_restart_button_clicked"
@@ -125,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="@+id/button1"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.722" />
+        app:layout_constraintVertical_bias="0.666" />
 
     <TextView
         android:id="@+id/HighScoreLabel"
