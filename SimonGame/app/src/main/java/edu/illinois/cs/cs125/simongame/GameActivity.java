@@ -33,6 +33,8 @@ public class GameActivity extends AppCompatActivity {
     }
     public void start_restart_button_clicked(final View v) {
         //if user pressed as restart, clear/save state. Begin a new game.
+        TextView t = findViewById(R.id.HighScore);
+        t.setText(Integer.valueOf(get_high_score()).toString());
         judge();
     }
     public void read_button_sequence() {
@@ -99,6 +101,7 @@ public class GameActivity extends AppCompatActivity {
                     .putInt("high_score", user_score).apply();
         }
         user_score = 0;
+        user_button_order.clear();
         generated_button_order.clear();
     }
     public void increment_button_list_size() {
