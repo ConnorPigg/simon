@@ -97,6 +97,12 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
+
+        android:id="@+id/button3"
+        android:layout_width="159dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
         android:background="@drawable/top_left_pressed"
         android:onClick="simon_button_clicked"
         android:text="3"
@@ -138,6 +144,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.454" />
+
     <TextView
         android:id="@+id/HighScore"
         android:layout_width="wrap_content"
